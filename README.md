@@ -14,8 +14,8 @@ To hide the API url, I used Base64 encoding.
 
 - Screenshots of your application
 
-![Screenshot](First_screen.png)
-![Screenshot](choosing_user.png)
-![Screenshot](fingerprint.png)
-![Screenshot](user_and_accounts.png)
+![Screenshot](First_screen.PNG)
+![Screenshot](choosing_user.PNG)
+![Screenshot](fingerprint.PNG)
+![Screenshot](user_and_accounts.PNG)
 
