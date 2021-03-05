@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">td3_v3</string>
+    <string name="biometric_login">biometric_login</string>
+    <string name="textview_display_welcome">display_welcome</string>
+    <string name="textview_display_accounts">display_accounts</string>
+    <string name="username">Username</string>
+    <string name="refresh">Refresh</string>
+</resources>
