@@ -12,6 +12,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 
+import javax.net.ssl.HttpsURLConnection;
 
 
 public class ConnectToApi extends AsyncTask<String,Void,String>{
@@ -23,7 +24,7 @@ public class ConnectToApi extends AsyncTask<String,Void,String>{
     protected String doInBackground(String... params) {
         Log.d("in Thread", "");
         URL url = null;
-        URLConnection urlConnection;
+        //URLConnection urlConnection;
         InputStream in;
         int i;
         char c;
@@ -39,7 +40,8 @@ public class ConnectToApi extends AsyncTask<String,Void,String>{
         }
         try {
 
-            urlConnection = url.openConnection();
+            HttpsURLConnection urlConnection = (HttpsURLConnection) url.openConnection();
+            urlConnection.connect();
             in = urlConnection.getInputStream();
             while((i = in.read())!=-1) {
 
